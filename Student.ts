@@ -74,6 +74,16 @@ export class Student {
         return this.feesTotal;
     }
 
-    
+    /**
+     * 
+     * @returns the remaining fees
+     */
+    public getRemainingFees(): number {
+        return this.feesTotal - this.feesPaid;
+    }
+
+    public toString() {
+        return `Student's name : ${this.name} total fees paid so far $ ${this.feesPaid}`
+    }
 
 }
