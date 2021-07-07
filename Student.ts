@@ -30,4 +30,50 @@ export class Student {
         this.grade = grade;
     }
 
+
+    /**
+     * Keep adding the fees to feesPaid Field.
+     * Add the fees to the fees paid.
+     * The school is going to recieve the funds
+     * @param fees 
+     */
+    public payFees(fees: number): void {
+        this.feesPaid += fees;
+        // @Todo update the school total money earned
+    }
+
+    /**
+     * 
+     * @returns id of the student
+     */
+    public getId(): number {
+        return this.id;
+    }
+
+    /**
+     * 
+     * @returns the grade of the student.
+     */
+    public getGrade(): number {
+        return this.grade;
+    }
+
+    /**
+     * 
+     * @returns fees paid by the student
+     */
+    getFeesPaid(): number {
+        return this.feesPaid;
+    }
+
+    /**
+     * 
+     * @returns the total fees of the student
+     */
+    getFeesTotal(): number {
+        return this.feesTotal;
+    }
+
+    
+
 }
